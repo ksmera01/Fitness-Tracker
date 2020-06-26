@@ -1,22 +1,22 @@
 //API Routes
 
 const router = require("express").Router();
-const workoutModel = require("../models/workoutModel.js");
+const models = require("../models");
 
 //Find Workouts
 router.get("/api/workouts/range", (req, res) => {
-    workoutModel.find()
+    models.Workout.find()
         .then(data => {
             res.json(data);
         })
         .catch(err => {
-            res.status(400).json(err);
+            res.send(err);
         });
 });
 
 //Create new workout
-router.get("/api/workouts", (req, res) => {
-    workoutModel.create({})
+router.post("/api/workouts", (req, res) => {
+    models.Workout.create({})
         .then(data => {
             res.json(data);
         })

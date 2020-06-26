@@ -1,5 +1,7 @@
+//API Routes
+
 const mongoose = require("mongoose");
-require("../models/exerciseModel.js");
+const exerciseModel = require("../models/exerciseModel.js");
 
 const Schema = mongoose.Schema;
 

@@ -1,8 +1,8 @@
-const db = require("./models");
+const workoutModel = require("../models/workoutModel.js");
 
 module.exports = function (app) {
-    app.post("/api/workouts", ({ body }, res) => {
-        db.Workout.create(body)
+    app.post("/api/workouts", (req, res) => {
+        workoutModel.create({})
             .then(data => {
                 res.json(data);
             })

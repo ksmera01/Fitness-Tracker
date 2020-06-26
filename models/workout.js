@@ -32,6 +32,13 @@ const workoutSchema = new Schema({
     //Deleted exercise model and added schema to workout model
 });
 
+workoutSchema.methods.addExercise = function () {
+    //Returning array of exercise and reducing it by sum of duration
+    return this.exercises.reduce((total, exercise) => {
+        return total + exercise.duration;
+    }, 0);
+}
+
 const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;

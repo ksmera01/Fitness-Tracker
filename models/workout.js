@@ -20,6 +20,9 @@ const exerciseSchema = new Schema({
     },
     sets: {
         type: Number,
+    },
+    distance: {
+        type: Number,
     }
 });
 

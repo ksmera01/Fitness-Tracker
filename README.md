@@ -6,6 +6,12 @@
 
   ![image description](./images/main.png)
 
+  ![image description](./images/pickExercise.png)
+
+  ![image description](./images/lastWorkout.png)
+
+  ![image description](./images/chart.png)
+
   ## Table of Contents
   
   - [Installation](#installation)
@@ -39,7 +45,7 @@
 
   ## Link
 
-  - 
+  - https://fitness-tracker-upenn.herokuapp.com/
 
   ## Questions? 
   
